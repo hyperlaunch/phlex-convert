@@ -4,7 +4,7 @@ Phlex Convert is a tool for converting HTML into [Phlex](https://phlex.fun) comp
 
 ## Context
 
-Phlex Convert uses AI (powered by [Anthropic Claude Haiku](https://www.anthropic.com/index/claude)) to quickly transform HTML, such as output from tools like [v0.dev](https://v0.dev), into usable Phlex components. This makes it ideal for developers building Ruby-based, object-oriented UI components.
+Phlex Convert uses AI (powered by [Anthropic Claude Haiku](https://www.anthropic.com/claude/haiku)) to quickly transform HTML, such as output from tools like [v0.dev](https://v0.dev), into usable Phlex components. This makes it ideal for developers building Ruby-based, object-oriented UI components.
 
 ## Getting Started
 

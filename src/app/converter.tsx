@@ -90,7 +90,8 @@ export default function PhlexConverter() {
 							Phlex gem
 						</Link>
 						, including proper use of slots and template_tag when necessary.
-						Your converted Phlex components will appear here as a JSON array.
+						Your converted Phlex components will appear here as formatted,
+						copyable Ruby snippets.
 					</p>
 					<div className="text-zinc-500 text-sm mt-8">
 						Built by{" "}
