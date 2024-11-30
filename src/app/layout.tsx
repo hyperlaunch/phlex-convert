@@ -15,9 +15,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className="scrollbar scrollbar-thumb-rounded-full scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin bg-zinc-950 text-zinc-300 text-pretty"
+		>
 			<body
-				className={`min-h-screen bg-zinc-950 text-zinc-300 p-6 flex flex-col items-center text-sm ${font.className} antialiased`}
+				className={`min-h-svh p-6 flex flex-col items-center text-sm ${font.className} antialiased scrollbar scrollbar-thumb-sky-700 scrollbar-track-sky-300 scrollbar-thin`}
 			>
 				{children}
 			</body>

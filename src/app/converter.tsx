@@ -55,7 +55,7 @@ export default function PhlexConverter() {
 		<div className="w-full max-w-3xl space-y-4">
 			<form onSubmit={handleSubmit} className="relative">
 				<textarea
-					className="w-full h-48 p-3 bg-zinc-900 rounded-lg focus:outline-none focus:ring-1 focus:ring-lime-500 resize-none pr-14"
+					className="w-full h-48 p-3 bg-zinc-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500  focus:ring-offset-2 focus:ring-offset-zinc-950 resize-none pr-14 scrollbar scrollbar-thumb-rounded-full scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
 					placeholder="Paste your code here and press Enter to convert..."
 					name="codeinput"
 					value={inputCode}
@@ -81,8 +81,9 @@ export default function PhlexConverter() {
 					</div>
 					<p className="text-zinc-400 mt-4 text-left">
 						Paste your HTML code above and press Enter or click the arrow to
-						convert it to Phlex Ruby components. The converter will create
-						well-structured, object-oriented components using the{" "}
+						convert it to Phlex Ruby components. The converter will use Claude
+						Haiku to create well-structured, object-oriented components using
+						the{" "}
 						<Link
 							className="text-lime-400 hover:text-lime-300 transition-colors"
 							href="https://rubygems.org/gems/phlex"
@@ -141,6 +142,7 @@ export default function PhlexConverter() {
 								borderRadius: 0,
 								background: "transparent",
 							}}
+							className="scrollbar scrollbar-thumb-rounded-full scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
 							codeTagProps={{ style: { fontSize: "0.75rem" } }}
 						>
 							{snippet.component}
