@@ -82,11 +82,17 @@ export default function PhlexConverter() {
 					<p className="text-zinc-400 mt-4 text-left">
 						Paste your HTML code above and press Enter or click the arrow to
 						convert it to Phlex Ruby components. The converter will create
-						well-structured, object-oriented components using the Phlex gem,
-						including proper use of slots and template_tag when necessary. Your
-						converted Phlex components will appear here as a JSON array.
+						well-structured, object-oriented components using the{" "}
+						<Link
+							className="text-lime-400 hover:text-lime-300 transition-colors"
+							href="https://rubygems.org/gems/phlex"
+						>
+							Phlex gem
+						</Link>
+						, including proper use of slots and template_tag when necessary.
+						Your converted Phlex components will appear here as a JSON array.
 					</p>
-					<div className="text-zinc-500 text-xs mt-8">
+					<div className="text-zinc-500 text-sm mt-8">
 						Built by{" "}
 						<Link
 							href="https://chrsgrrtt.com"
@@ -115,7 +121,7 @@ export default function PhlexConverter() {
 						key={snippet.file_name}
 						className="bg-zinc-900 rounded-lg overflow-hidden"
 					>
-						<div className="bg-zinc-800 px-3 py-2 text-white text-xs font-medium flex justify-between items-center">
+						<div className="bg-zinc-800 px-3 py-2 text-white text-sm font-medium flex justify-between items-center">
 							<span>{snippet.file_name}</span>
 							<button
 								type="button"

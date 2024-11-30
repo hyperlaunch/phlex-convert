@@ -10,11 +10,11 @@ Phlex Convert uses AI (powered by [Anthropic Claude Haiku](https://www.anthropic
 
 1. Install dependencies:
    ```bash
-   npm install
+   bun install
    ```
 2. Start the dev server:
    ```bash
-   npm run dev
+   bun run dev
    ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
